@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_rounded_white">
+
+    <!--todo dore in cadre reangi bayd gerd beshe ke nashode nemidonam chera-->
+    <!--for color bg-->
+    <View
+        android:id="@+id/viewColorPriority_itemRecyclerNotes"
+        android:layout_width="6dp"
+        android:layout_height="0dp"
+        android:background="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--txt Title-->
+    <TextView
+        android:paddingEnd="32dp"
+        android:id="@+id/txtTitle_itemRecyclerNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@color/black"
+        android:text="aaaaaaaaa"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/viewColorPriority_itemRecyclerNotes"
+        app:layout_constraintTop_toTopOf="@id/viewColorPriority_itemRecyclerNotes" />
+
+
+    <!--txt dec-->
+    <TextView
+        android:paddingEnd="32dp"
+        android:id="@+id/txtDescription_itemRecyclerNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grayDark"
+        android:textSize="16sp"
+        android:text="bbbbbbbbb"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toEndOf="@id/viewColorPriority_itemRecyclerNotes"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle_itemRecyclerNotes" />
+
+
+    <!--img view category-->
+    <ImageView
+        android:id="@+id/imgCategory_itemRecyclerNotes"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/home"
+        app:layout_constraintStart_toEndOf="@id/viewColorPriority_itemRecyclerNotes"
+        app:layout_constraintTop_toBottomOf="@id/txtDescription_itemRecyclerNotes" />
+
+
+    <!--img dots-->
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/imgDots_itemRecyclerNotes"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="16dp"
+        android:focusable="true"
+        android:src="@drawable/ic_more2"
+        app:layout_constraintBottom_toBottomOf="@id/imgCategory_itemRecyclerNotes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imgCategory_itemRecyclerNotes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
